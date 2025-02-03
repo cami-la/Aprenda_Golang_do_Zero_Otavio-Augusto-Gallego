@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        h2 {
+            color: blueviolet;
+            font-size: 30px;
+            font-family: "Comic Sans MS", serif;
+        }
+
+        marquee {
+            color: red;
+            font-size: 20px;
+            font-family: "Comic Sans MS", serif;
+        }
+    </style>
+</head>
+<body>
+<h2 style="color: blueviolet">Main Page!</h2>
+
+<h4>Welcome, {{ .Name }} to the main page!</h4>
+
+<marquee>This is the main page of the website</marquee>
+
+<button id="main-button">Click Me!</button>
+
+<script>
+    let button = document.getElementById("main-button");
+    button.addEventListener("click", function () {
+        alert("You clicked the button!");
+    });
+</script>
+</body>
+</html>
+
