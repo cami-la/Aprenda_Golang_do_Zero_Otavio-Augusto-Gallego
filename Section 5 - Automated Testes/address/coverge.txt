@@ -1,0 +1,7 @@
+mode: set
+Section_5_-_Automated_Testes/address/address.go:7.41,15.41 5 1
+Section_5_-_Automated_Testes/address/address.go:15.41,16.31 1 1
+Section_5_-_Automated_Testes/address/address.go:16.31,18.4 1 1
+Section_5_-_Automated_Testes/address/address.go:21.2,21.17 1 1
+Section_5_-_Automated_Testes/address/address.go:21.17,23.3 1 1
+Section_5_-_Automated_Testes/address/address.go:25.2,25.23 1 1

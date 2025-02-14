@@ -4,7 +4,7 @@ import (
 	"strings"
 )
 
-func addressType(address string) string {
+func AddressType(address string) string {
 	validTypes := []string{"rua", "avenida", "estrada", "rodovia"}
 	santizedAddress := strings.ToLower(address)
 
@@ -19,7 +19,7 @@ func addressType(address string) string {
 	}
 
 	if isValidType {
-		return firstWord
+		return strings.Title(firstWord)
 	}
 
 	return "Invalid type"

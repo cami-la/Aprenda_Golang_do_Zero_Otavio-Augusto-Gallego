@@ -1,34 +1,39 @@
+package shapes
 
-type shape interface {
+import (
+	"fmt"
+	"math"
+)
+
+type Shape interface {
 	area() float64
 }
 
-func writeArea(s shape) {
+func WriteArea(s Shape) {
 	fmt.Printf("The area of the shape is %0.2f\n", s.area())
 }
 
-type rectangle struct {
-	height float64
-	width  float64
+type Rectangle struct {
+	Height float64
+	Width  float64
 }
 
-func (r rectangle) area() float64 {
-	return r.height * r.width
+func (r Rectangle) area() float64 {
+	return r.Height * r.Width
 }
 
-type circle struct {
-	radius float64
+type Circle struct {
+	Radius float64
 }
 
-func (c circle) area() float64 {
-	return math.Pi * math.Pow(c.radius, 2)
+func (c Circle) area() float64 {
+	return math.Pi * math.Pow(c.Radius, 2)
 }
 
 func main() {
-	r := rectangle{10, 15}
-	writeArea(r)
+	r := Rectangle{10, 15}
+	WriteArea(r)
 
-	c := circle{10}
-	writeArea(c)
+	c := Circle{10}
+	WriteArea(c)
 }
-
